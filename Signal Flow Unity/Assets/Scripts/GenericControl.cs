@@ -21,6 +21,8 @@ public class GenericControl : MonoBehaviour
     public float controlValue = 0;
     public bool useToggleLED = false, ToggleLEDOnAtStart= false;
     public ToggledLED connectedToggleLED;
+    public GameObject pluggedInto;
+
     void Start()
     {
         mouseSelection = GameObject.Find("Main Camera").GetComponent<MouseSelectionController>();
@@ -139,6 +141,7 @@ public class GenericControl : MonoBehaviour
                     transform.localPosition = new Vector3(transform.localPosition.x, toggleUpHeight, transform.localPosition.z);
                 }
             }
+            
 
         }
     }

@@ -10,6 +10,8 @@ TagManager:
   - Fire
   - Led
   - Toggle
+  - StereoPlug
+  - StereoCable
   layers:
   - Default
   - TransparentFX

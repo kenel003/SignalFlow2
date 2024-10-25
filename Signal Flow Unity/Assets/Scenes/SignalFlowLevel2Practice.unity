@@ -1790,6 +1790,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &93052382
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1998,6 +1999,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &120771474
 GameObject:
   m_ObjectHideFlags: 0
@@ -2064,6 +2066,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &120771477
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2447,6 +2450,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &144862707
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2655,6 +2659,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &145761836
 GameObject:
   m_ObjectHideFlags: 0
@@ -2721,6 +2726,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &145761839
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2943,6 +2949,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &151629520
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3099,6 +3106,68 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 163526830}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &171162139
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 171162140}
+  - component: {fileID: 171162142}
+  - component: {fileID: 171162141}
+  m_Layer: 0
+  m_Name: Stereo Plug -LINE IN Channel 3
+  m_TagString: StereoPlug
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &171162140
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171162139}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.08, y: 0.478, z: 2.91}
+  m_LocalScale: {x: 0.29664272, y: 0.29664272, z: 0.29664272}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &171162141
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171162139}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &171162142
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171162139}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &173775577
 GameObject:
   m_ObjectHideFlags: 0
@@ -3238,6 +3307,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &174427250
 GameObject:
   m_ObjectHideFlags: 0
@@ -3304,6 +3374,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &174427253
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3511,6 +3582,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 175699063}
   m_CullTransparentMesh: 1
+--- !u!1 &189111272
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 189111273}
+  - component: {fileID: 189111275}
+  - component: {fileID: 189111274}
+  m_Layer: 0
+  m_Name: Stereo Plug -INSERT Channel 5_6
+  m_TagString: StereoPlug
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &189111273
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189111272}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.7789999, y: 0.478, z: 2.4490001}
+  m_LocalScale: {x: 0.29664272, y: 0.29664272, z: 0.29664272}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &189111274
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189111272}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &189111275
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189111272}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &190678410
 GameObject:
   m_ObjectHideFlags: 0
@@ -3635,6 +3768,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!65 &194736214
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3788,6 +3922,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &196373200
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4067,6 +4202,68 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 197387886}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &202355377
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 202355378}
+  - component: {fileID: 202355380}
+  - component: {fileID: 202355379}
+  m_Layer: 0
+  m_Name: Stereo Plug -INSERT Channel 2
+  m_TagString: StereoPlug
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &202355378
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202355377}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.723, y: 0.478, z: 2.479}
+  m_LocalScale: {x: 0.29664272, y: 0.29664272, z: 0.29664272}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &202355379
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202355377}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &202355380
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202355377}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &204199378
 GameObject:
   m_ObjectHideFlags: 0
@@ -4116,6 +4313,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!65 &204199380
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4342,6 +4540,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &223100788
 GameObject:
   m_ObjectHideFlags: 0
@@ -4611,6 +4810,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &249201559
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4767,6 +4967,68 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 249732554}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &250769352
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 250769353}
+  - component: {fileID: 250769355}
+  - component: {fileID: 250769354}
+  m_Layer: 0
+  m_Name: Stereo Plug - MAIN R
+  m_TagString: StereoPlug
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &250769353
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250769352}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.1339998, y: 0.478, z: 2.9420002}
+  m_LocalScale: {x: 0.29664272, y: 0.29664272, z: 0.29664272}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &250769354
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250769352}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &250769355
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250769352}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &251636805
 GameObject:
   m_ObjectHideFlags: 0
@@ -4833,6 +5095,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &251636808
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5325,6 +5588,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &270429541
 GameObject:
   m_ObjectHideFlags: 0
@@ -5391,6 +5655,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &270429544
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5599,6 +5864,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &285719298
 GameObject:
   m_ObjectHideFlags: 0
@@ -5817,6 +6083,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &292727374
 GameObject:
   m_ObjectHideFlags: 0
@@ -5883,6 +6150,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &292727377
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6124,6 +6392,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304589255}
   m_CullTransparentMesh: 1
+--- !u!1 &305739870
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 305739871}
+  m_Layer: 0
+  m_Name: ________Stereo Interfaces_______
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &305739871
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305739870}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.778, y: 0.478, z: 2.43}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &306692227
 GameObject:
   m_ObjectHideFlags: 0
@@ -6425,6 +6724,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &315114551
 GameObject:
   m_ObjectHideFlags: 0
@@ -6574,6 +6874,7 @@ MonoBehaviour:
   useToggleLED: 1
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 555146187}
+  pluggedInto: {fileID: 0}
 --- !u!136 &315369819
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6869,6 +7170,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &322405446
 GameObject:
   m_ObjectHideFlags: 0
@@ -7137,6 +7439,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &327505997
 GameObject:
   m_ObjectHideFlags: 0
@@ -7369,6 +7672,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &330360346
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7581,6 +7885,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &333783670
 GameObject:
   m_ObjectHideFlags: 0
@@ -7751,6 +8056,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &339522120
 GameObject:
   m_ObjectHideFlags: 0
@@ -7817,6 +8123,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &339522123
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7956,6 +8263,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &341925232
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8292,6 +8600,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &354925106
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8500,6 +8809,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &359528726
 GameObject:
   m_ObjectHideFlags: 0
@@ -8566,6 +8876,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &359528729
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8871,6 +9182,7 @@ MonoBehaviour:
   useToggleLED: 1
   ToggleLEDOnAtStart: 1
   connectedToggleLED: {fileID: 371141741}
+  pluggedInto: {fileID: 0}
 --- !u!136 &371141738
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -9361,6 +9673,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &418970395
 GameObject:
   m_ObjectHideFlags: 0
@@ -9510,6 +9823,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &420197519
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10051,6 +10365,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &450929013
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10340,6 +10655,68 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 453293192}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &454913322
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 454913323}
+  - component: {fileID: 454913325}
+  - component: {fileID: 454913324}
+  m_Layer: 0
+  m_Name: Stereo Plug -INSERT Channel 3
+  m_TagString: StereoPlug
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &454913323
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454913322}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.08, y: 0.478, z: 2.4550002}
+  m_LocalScale: {x: 0.29664272, y: 0.29664272, z: 0.29664272}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &454913324
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454913322}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &454913325
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454913322}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &455250333
 GameObject:
   m_ObjectHideFlags: 0
@@ -10789,6 +11166,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &487620209
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -11164,6 +11542,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &499794824
 GameObject:
   m_ObjectHideFlags: 0
@@ -11230,6 +11609,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &499794827
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -11605,6 +11985,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &522160885
 GameObject:
   m_ObjectHideFlags: 0
@@ -11706,6 +12087,7 @@ MonoBehaviour:
   useToggleLED: 1
   ToggleLEDOnAtStart: 1
   connectedToggleLED: {fileID: 522493047}
+  pluggedInto: {fileID: 0}
 --- !u!136 &522493044
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -11942,6 +12324,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &551325419
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -12317,6 +12700,68 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 556545262}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &563629356
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 563629357}
+  - component: {fileID: 563629359}
+  - component: {fileID: 563629358}
+  m_Layer: 0
+  m_Name: Stereo Plug - SUB OUT 2
+  m_TagString: StereoPlug
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &563629357
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563629356}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.505, y: 0.478, z: 2.0110002}
+  m_LocalScale: {x: 0.29664272, y: 0.29664272, z: 0.29664272}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &563629358
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563629356}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &563629359
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563629356}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &569804789
 GameObject:
   m_ObjectHideFlags: 0
@@ -12501,6 +12946,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &573163032
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -13124,6 +13570,69 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
+--- !u!1 &613801822
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 613801823}
+  - component: {fileID: 613801825}
+  - component: {fileID: 613801824}
+  m_Layer: 0
+  m_Name: Stereo Plug - PHONES
+  m_TagString: StereoPlug
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &613801823
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613801822}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.146, y: 0.478, z: 1.9850001}
+  m_LocalScale: {x: 0.29664272, y: 0.29664272, z: 0.29664272}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &613801824
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613801822}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &613801825
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613801822}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &622143220
 GameObject:
   m_ObjectHideFlags: 0
@@ -13256,6 +13765,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!65 &624829116
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13492,6 +14002,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &636112957
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -13894,6 +14405,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &677940401
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -14355,6 +14867,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &694973165
 GameObject:
   m_ObjectHideFlags: 0
@@ -14438,6 +14951,68 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 694973165}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &698525616
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 698525617}
+  - component: {fileID: 698525619}
+  - component: {fileID: 698525618}
+  m_Layer: 0
+  m_Name: Stereo Plug -LINE IN Channel 7_8
+  m_TagString: StereoPlug
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &698525617
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698525616}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.15699995, y: 0.478, z: 2.915}
+  m_LocalScale: {x: 0.29664272, y: 0.29664272, z: 0.29664272}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &698525618
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698525616}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &698525619
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698525616}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &700668194
 GameObject:
   m_ObjectHideFlags: 0
@@ -14710,6 +15285,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -15036,6 +15612,7 @@ MonoBehaviour:
   useToggleLED: 1
   ToggleLEDOnAtStart: 1
   connectedToggleLED: {fileID: 720128054}
+  pluggedInto: {fileID: 0}
 --- !u!136 &720128051
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -15397,6 +15974,68 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 731368403}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &733143555
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 733143556}
+  - component: {fileID: 733143558}
+  - component: {fileID: 733143557}
+  m_Layer: 0
+  m_Name: Stereo Plug -INSERT Channel 1
+  m_TagString: StereoPlug
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &733143556
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733143555}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.3460002, y: 0.478, z: 2.479}
+  m_LocalScale: {x: 0.29664272, y: 0.29664272, z: 0.29664272}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &733143557
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733143555}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &733143558
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733143555}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &740094405
 GameObject:
   m_ObjectHideFlags: 0
@@ -16060,6 +16699,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &771426362
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -16268,6 +16908,69 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
+--- !u!1 &776870827
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 776870828}
+  - component: {fileID: 776870830}
+  - component: {fileID: 776870829}
+  m_Layer: 0
+  m_Name: Stereo Plug -FX SEND
+  m_TagString: StereoPlug
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &776870828
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776870827}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.7800001, y: 0.478, z: 2.926}
+  m_LocalScale: {x: 0.29664272, y: 0.29664272, z: 0.29664272}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &776870829
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776870827}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &776870830
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776870827}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &791483143
 GameObject:
   m_ObjectHideFlags: 0
@@ -16282,7 +16985,7 @@ GameObject:
   - component: {fileID: 791483145}
   m_Layer: 0
   m_Name: Inner Wire
-  m_TagString: Dial
+  m_TagString: StereoCable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16296,8 +16999,8 @@ Transform:
   m_GameObject: {fileID: 791483143}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 12.550001, z: 0}
-  m_LocalScale: {x: 0.54, y: 13.722757, z: 0.54}
+  m_LocalPosition: {x: 0, y: 1.5900009, z: 0}
+  m_LocalScale: {x: 0.54, y: 26.15, z: 0.54}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1107650906}
@@ -16968,6 +17671,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &871112771
 GameObject:
   m_ObjectHideFlags: 0
@@ -17034,6 +17738,7 @@ MonoBehaviour:
   useToggleLED: 1
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 1701408407}
+  pluggedInto: {fileID: 0}
 --- !u!136 &871112774
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -17680,6 +18385,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &917971424
 GameObject:
   m_ObjectHideFlags: 0
@@ -18017,6 +18723,7 @@ MonoBehaviour:
   useToggleLED: 1
   ToggleLEDOnAtStart: 1
   connectedToggleLED: {fileID: 925131394}
+  pluggedInto: {fileID: 0}
 --- !u!136 &925131391
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -18322,6 +19029,69 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
+--- !u!1 &933703853
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 933703854}
+  - component: {fileID: 933703856}
+  - component: {fileID: 933703855}
+  m_Layer: 0
+  m_Name: Stereo Plug - MAIN L
+  m_TagString: StereoPlug
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &933703854
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933703853}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.505, y: 0.478, z: 2.9420002}
+  m_LocalScale: {x: 0.29664272, y: 0.29664272, z: 0.29664272}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &933703855
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933703853}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &933703856
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933703853}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &941498131
 GameObject:
   m_ObjectHideFlags: 0
@@ -18458,6 +19228,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &941826893
 GameObject:
   m_ObjectHideFlags: 0
@@ -18607,6 +19378,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &946302975
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -18956,6 +19728,7 @@ MonoBehaviour:
   clickedObject: {fileID: 1800024095}
   newClick: 0
   newClickForToggle: 0
+  cableSelected: 0
   gameManager: {fileID: 1832476979}
 --- !u!114 &963194230
 MonoBehaviour:
@@ -20357,6 +21130,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &1036883889
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -20660,6 +21434,7 @@ MonoBehaviour:
   useToggleLED: 1
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 1899870154}
+  pluggedInto: {fileID: 0}
 --- !u!65 &1066303258
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20797,6 +21572,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &1076987670
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -21088,6 +21864,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &1104999953
 GameObject:
   m_ObjectHideFlags: 0
@@ -21133,9 +21910,10 @@ GameObject:
   - component: {fileID: 1107650905}
   - component: {fileID: 1107650904}
   - component: {fileID: 1107650903}
+  - component: {fileID: 1107650907}
   m_Layer: 0
   m_Name: R Output Plug
-  m_TagString: Dial
+  m_TagString: StereoCable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21159,8 +21937,8 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
+  m_Radius: 0.58
+  m_Height: 40
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!23 &1107650904
@@ -21222,7 +22000,7 @@ Transform:
   m_GameObject: {fileID: 1107650902}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.112, y: 0.72, z: 3.373}
+  m_LocalPosition: {x: 5.227, y: 0.72, z: 2.39}
   m_LocalScale: {x: 0.44677722, y: 0.29845333, z: 0.44677722}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -21230,6 +22008,36 @@ Transform:
   - {fileID: 791483144}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1107650907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107650902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a176c714f2ec39a468441402d63baaac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controlName: 
+  dialMin: 0
+  dialMax: 359
+  toggleUpHeight: 0.1
+  toggleDownHeight: 0.015
+  sliderMin: 0
+  sliderMax: 1.25
+  sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  inputCooldown: 0
+  controlValue: 0
+  useToggleLED: 0
+  ToggleLEDOnAtStart: 0
+  connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &1121384444
 GameObject:
   m_ObjectHideFlags: 0
@@ -21296,6 +22104,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &1121384447
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -21652,6 +22461,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &1132190195
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -21874,6 +22684,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &1140695872
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -22122,6 +22933,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &1148436301
 GameObject:
   m_ObjectHideFlags: 0
@@ -22315,6 +23127,68 @@ Transform:
   - {fileID: 1035263508}
   m_Father: {fileID: 624829119}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1158350196
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1158350197}
+  - component: {fileID: 1158350199}
+  - component: {fileID: 1158350198}
+  m_Layer: 0
+  m_Name: Stereo Plug - FOOT SWITCH
+  m_TagString: StereoPlug
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1158350197
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158350196}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.1339998, y: 0.478, z: 2.45}
+  m_LocalScale: {x: 0.29664272, y: 0.29664272, z: 0.29664272}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &1158350198
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158350196}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1158350199
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158350196}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1160192108
 GameObject:
   m_ObjectHideFlags: 0
@@ -22454,6 +23328,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &1161814998
 GameObject:
   m_ObjectHideFlags: 0
@@ -22703,6 +23578,68 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1174077097}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1177918225
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1177918226}
+  - component: {fileID: 1177918228}
+  - component: {fileID: 1177918227}
+  m_Layer: 0
+  m_Name: Stereo Plug -MON SEND
+  m_TagString: StereoPlug
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1177918226
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177918225}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.7800001, y: 0.478, z: 3.475}
+  m_LocalScale: {x: 0.29664272, y: 0.29664272, z: 0.29664272}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &1177918227
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177918225}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1177918228
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177918225}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1188861138
 GameObject:
   m_ObjectHideFlags: 0
@@ -23001,6 +23938,7 @@ MonoBehaviour:
   useToggleLED: 1
   ToggleLEDOnAtStart: 1
   connectedToggleLED: {fileID: 1197959791}
+  pluggedInto: {fileID: 0}
 --- !u!136 &1197959788
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -23306,6 +24244,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &1204395336
 GameObject:
   m_ObjectHideFlags: 0
@@ -23500,6 +24439,7 @@ MonoBehaviour:
   useToggleLED: 1
   ToggleLEDOnAtStart: 1
   connectedToggleLED: {fileID: 1211385759}
+  pluggedInto: {fileID: 0}
 --- !u!136 &1211385756
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -23722,6 +24662,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &1213695385
 GameObject:
   m_ObjectHideFlags: 0
@@ -23857,6 +24798,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &1218303016
 GameObject:
   m_ObjectHideFlags: 0
@@ -23989,6 +24931,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!65 &1218894244
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24294,6 +25237,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &1236117280
 GameObject:
   m_ObjectHideFlags: 0
@@ -24360,6 +25304,7 @@ MonoBehaviour:
   useToggleLED: 1
   ToggleLEDOnAtStart: 1
   connectedToggleLED: {fileID: 1236117286}
+  pluggedInto: {fileID: 0}
 --- !u!136 &1236117283
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -24596,6 +25541,7 @@ MonoBehaviour:
   useToggleLED: 1
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 1194038980}
+  pluggedInto: {fileID: 0}
 --- !u!136 &1265809847
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -24804,6 +25750,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &1285806041
 GameObject:
   m_ObjectHideFlags: 0
@@ -24939,6 +25886,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &1291312558
 GameObject:
   m_ObjectHideFlags: 0
@@ -25003,6 +25951,7 @@ MonoBehaviour:
   useToggleLED: 1
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 963288187}
+  pluggedInto: {fileID: 0}
 --- !u!65 &1291312561
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25416,6 +26365,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &1334129563
 GameObject:
   m_ObjectHideFlags: 0
@@ -25517,6 +26467,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &1339325663
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -25729,6 +26680,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &1342182717
 GameObject:
   m_ObjectHideFlags: 0
@@ -25793,6 +26745,7 @@ MonoBehaviour:
   useToggleLED: 1
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 322919509}
+  pluggedInto: {fileID: 0}
 --- !u!65 &1342182720
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25999,6 +26952,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &1343939776
 GameObject:
   m_ObjectHideFlags: 0
@@ -26881,6 +27835,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &1408546887
 GameObject:
   m_ObjectHideFlags: 0
@@ -26945,6 +27900,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!65 &1408546890
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27145,6 +28101,68 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1424855776}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1426608545
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1426608546}
+  - component: {fileID: 1426608548}
+  - component: {fileID: 1426608547}
+  m_Layer: 0
+  m_Name: Stereo Plug -INSERT Channel 7_8
+  m_TagString: StereoPlug
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1426608546
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426608545}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.15699995, y: 0.478, z: 2.46}
+  m_LocalScale: {x: 0.29664272, y: 0.29664272, z: 0.29664272}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &1426608547
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426608545}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1426608548
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426608545}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1428537308
 GameObject:
   m_ObjectHideFlags: 0
@@ -27431,6 +28449,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &1450706938
 GameObject:
   m_ObjectHideFlags: 0
@@ -27497,6 +28516,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &1450706941
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -27705,6 +28725,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &1484691271
 GameObject:
   m_ObjectHideFlags: 0
@@ -27871,6 +28892,68 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1487168179}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1489572367
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1489572368}
+  - component: {fileID: 1489572370}
+  - component: {fileID: 1489572369}
+  m_Layer: 0
+  m_Name: Stereo Plug -LINE IN Channel 5
+  m_TagString: StereoPlug
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1489572368
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489572367}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.7789999, y: 0.478, z: 2.904}
+  m_LocalScale: {x: 0.29664272, y: 0.29664272, z: 0.29664272}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &1489572369
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489572367}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1489572370
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489572367}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1495691928
 GameObject:
   m_ObjectHideFlags: 0
@@ -28006,6 +29089,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1495691928}
   m_CullTransparentMesh: 1
+--- !u!1 &1495721347
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1495721348}
+  - component: {fileID: 1495721350}
+  - component: {fileID: 1495721349}
+  m_Layer: 0
+  m_Name: Stereo Plug -LINE IN Channel 9_10
+  m_TagString: StereoPlug
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1495721348
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495721347}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.48399997, y: 0.478, z: 2.915}
+  m_LocalScale: {x: 0.29664272, y: 0.29664272, z: 0.29664272}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &1495721349
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495721347}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1495721350
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495721347}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1500689653
 GameObject:
   m_ObjectHideFlags: 0
@@ -28457,6 +29602,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &1521134880
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -28665,6 +29811,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &1527944242
 GameObject:
   m_ObjectHideFlags: 0
@@ -28731,6 +29878,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &1527944245
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -28804,6 +29952,68 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1527944242}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1529098288
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1529098289}
+  - component: {fileID: 1529098291}
+  - component: {fileID: 1529098290}
+  m_Layer: 0
+  m_Name: Stereo Plug -INSERT Channel 9_10
+  m_TagString: StereoPlug
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1529098289
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529098288}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.48399997, y: 0.478, z: 2.46}
+  m_LocalScale: {x: 0.29664272, y: 0.29664272, z: 0.29664272}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &1529098290
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529098288}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1529098291
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529098288}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1529675005
 GameObject:
   m_ObjectHideFlags: 0
@@ -28870,6 +30080,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &1529675008
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -29507,6 +30718,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &1545192774
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -29981,6 +31193,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &1569335277
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -30190,6 +31403,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &1583142457
 GameObject:
   m_ObjectHideFlags: 0
@@ -30437,6 +31651,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &1589472569
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -30728,6 +31943,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &1600436335
 GameObject:
   m_ObjectHideFlags: 0
@@ -30777,6 +31993,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!65 &1600436337
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30930,6 +32147,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &1601376716
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -31135,6 +32353,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!65 &1605047186
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31324,6 +32543,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 127
   m_IsActive: 1
+--- !u!1 &1631741058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1631741059}
+  - component: {fileID: 1631741061}
+  - component: {fileID: 1631741060}
+  m_Layer: 0
+  m_Name: Stereo Plug -INSERT Channel 4
+  m_TagString: StereoPlug
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1631741059
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631741058}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.4410003, y: 0.478, z: 2.479}
+  m_LocalScale: {x: 0.29664272, y: 0.29664272, z: 0.29664272}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &1631741060
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631741058}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1631741061
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631741058}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1634784075
 GameObject:
   m_ObjectHideFlags: 0
@@ -31473,6 +32754,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &1637328513
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -31612,6 +32894,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &1642306311
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -31834,6 +33117,7 @@ MonoBehaviour:
   useToggleLED: 1
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 135125710}
+  pluggedInto: {fileID: 0}
 --- !u!136 &1665004190
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -32125,6 +33409,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &1677157064
 GameObject:
   m_ObjectHideFlags: 0
@@ -32264,6 +33549,69 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
+--- !u!1 &1683440111
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1683440112}
+  - component: {fileID: 1683440114}
+  - component: {fileID: 1683440113}
+  m_Layer: 0
+  m_Name: Stereo Plug -LINE IN Channel 4
+  m_TagString: StereoPlug
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1683440112
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683440111}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.4410003, y: 0.478, z: 2.934}
+  m_LocalScale: {x: 0.29664272, y: 0.29664272, z: 0.29664272}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &1683440113
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683440111}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1683440114
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683440111}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1684311094
 GameObject:
   m_ObjectHideFlags: 0
@@ -32496,6 +33844,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &1694930051
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -33420,6 +34769,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &1750963814
 GameObject:
   m_ObjectHideFlags: 0
@@ -33486,6 +34836,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &1750963817
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -33767,11 +35118,10 @@ GameObject:
   - component: {fileID: 1780520291}
   - component: {fileID: 1780520295}
   - component: {fileID: 1780520294}
-  - component: {fileID: 1780520293}
   - component: {fileID: 1780520292}
   m_Layer: 0
   m_Name: 'R Output LED '
-  m_TagString: Dial
+  m_TagString: StereoCable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33785,8 +35135,8 @@ Transform:
   m_GameObject: {fileID: 1780520290}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 12.550001, z: 0}
-  m_LocalScale: {x: 0.54596984, y: 13.722757, z: 0.54596984}
+  m_LocalPosition: {x: 0, y: 1.5900009, z: 0}
+  m_LocalScale: {x: 0.54596984, y: 26.15, z: 0.54596984}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1107650906}
@@ -33806,29 +35156,6 @@ MonoBehaviour:
   isOnByDefault: 0
   intensityWiggle: 5
   intensityWiggleRange: 8
---- !u!136 &1780520293
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1780520290}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!23 &1780520294
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33945,6 +35272,7 @@ MonoBehaviour:
   useToggleLED: 1
   ToggleLEDOnAtStart: 1
   connectedToggleLED: {fileID: 1784288133}
+  pluggedInto: {fileID: 0}
 --- !u!136 &1784288130
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -34790,6 +36118,8 @@ MonoBehaviour:
   isQuizMode: 0
   incorrectItemsText: {fileID: 1353825508}
   guiUp: 1
+  outputCableL: {fileID: 1916173564}
+  outputCableR: {fileID: 1107650907}
 --- !u!1 &1837305375
 GameObject:
   m_ObjectHideFlags: 0
@@ -34856,6 +36186,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &1837305378
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -35136,6 +36467,68 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1839974238}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1843441269
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1843441270}
+  - component: {fileID: 1843441272}
+  - component: {fileID: 1843441271}
+  m_Layer: 0
+  m_Name: Stereo Plug - L Control Room
+  m_TagString: StereoPlug
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1843441270
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843441269}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.7800001, y: 0.478, z: 2.434}
+  m_LocalScale: {x: 0.29664272, y: 0.29664272, z: 0.29664272}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &1843441271
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843441269}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1843441272
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843441269}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1856524942
 GameObject:
   m_ObjectHideFlags: 0
@@ -35275,6 +36668,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &1861721222
 GameObject:
   m_ObjectHideFlags: 0
@@ -35926,6 +37320,69 @@ MonoBehaviour:
   useToggleLED: 1
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 451104917}
+  pluggedInto: {fileID: 0}
+--- !u!1 &1885152687
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1885152688}
+  - component: {fileID: 1885152690}
+  - component: {fileID: 1885152689}
+  m_Layer: 0
+  m_Name: Stereo Plug - R Control Room
+  m_TagString: StereoPlug
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1885152688
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885152687}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.505, y: 0.478, z: 2.45}
+  m_LocalScale: {x: 0.29664272, y: 0.29664272, z: 0.29664272}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &1885152689
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885152687}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1885152690
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885152687}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1885967430
 GameObject:
   m_ObjectHideFlags: 0
@@ -36311,7 +37768,7 @@ MonoBehaviour:
   m_text: 'Signal Flow
 
 
-    Level 1: Basic Left/Right Output
+    Level 2: Subgroup Assignment
 
 '
   m_isRightToLeft: 0
@@ -36539,6 +37996,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &1915897657
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -36624,9 +38082,10 @@ GameObject:
   - component: {fileID: 1916173562}
   - component: {fileID: 1916173561}
   - component: {fileID: 1916173560}
+  - component: {fileID: 1916173564}
   m_Layer: 0
   m_Name: L Output Plug
-  m_TagString: Dial
+  m_TagString: StereoCable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36650,8 +38109,8 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
+  m_Radius: 0.58
+  m_Height: 40
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!23 &1916173561
@@ -36713,7 +38172,7 @@ Transform:
   m_GameObject: {fileID: 1916173559}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.468, y: 0.72, z: 3.373}
+  m_LocalPosition: {x: 4.583, y: 0.72, z: 2.39}
   m_LocalScale: {x: 0.44677722, y: 0.29845333, z: 0.44677722}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -36721,6 +38180,36 @@ Transform:
   - {fileID: 2094359475}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1916173564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916173559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a176c714f2ec39a468441402d63baaac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controlName: 
+  dialMin: 0
+  dialMax: 359
+  toggleUpHeight: 0.1
+  toggleDownHeight: 0.015
+  sliderMin: 0
+  sliderMax: 1.25
+  sliderSpeed: 0.15
+  sliderValue: 0
+  sliderPercent: 0
+  dialPercent: 0
+  toggled: 0
+  inputCooldown: 0
+  controlValue: 0
+  useToggleLED: 0
+  ToggleLEDOnAtStart: 0
+  connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &1917954527
 GameObject:
   m_ObjectHideFlags: 0
@@ -37105,6 +38594,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &1970131710
 GameObject:
   m_ObjectHideFlags: 0
@@ -37486,6 +38976,7 @@ MonoBehaviour:
   useToggleLED: 1
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 1032437810}
+  pluggedInto: {fileID: 0}
 --- !u!136 &1981800673
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -37910,6 +39401,7 @@ MonoBehaviour:
   useToggleLED: 1
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 1763208507}
+  pluggedInto: {fileID: 0}
 --- !u!136 &1998953307
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -38447,6 +39939,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!65 &2033045280
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38697,6 +40190,68 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2049298014}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2058910345
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2058910346}
+  - component: {fileID: 2058910348}
+  - component: {fileID: 2058910347}
+  m_Layer: 0
+  m_Name: Stereo Plug - SUB OUT 1
+  m_TagString: StereoPlug
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2058910346
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058910345}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.7800001, y: 0.478, z: 1.9950001}
+  m_LocalScale: {x: 0.29664272, y: 0.29664272, z: 0.29664272}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &2058910347
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058910345}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &2058910348
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058910345}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2070891886
 GameObject:
   m_ObjectHideFlags: 0
@@ -38998,6 +40553,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &2082183542
 GameObject:
   m_ObjectHideFlags: 0
@@ -39009,11 +40565,10 @@ GameObject:
   - component: {fileID: 2082183543}
   - component: {fileID: 2082183547}
   - component: {fileID: 2082183546}
-  - component: {fileID: 2082183545}
   - component: {fileID: 2082183544}
   m_Layer: 0
   m_Name: L Output LED
-  m_TagString: Dial
+  m_TagString: StereoCable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39027,8 +40582,8 @@ Transform:
   m_GameObject: {fileID: 2082183542}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 12.55, z: 0}
-  m_LocalScale: {x: 0.54596984, y: 13.722757, z: 0.54596984}
+  m_LocalPosition: {x: 0, y: 1.5899999, z: 0}
+  m_LocalScale: {x: 0.54596984, y: 26.15, z: 0.54596984}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1916173563}
@@ -39048,29 +40603,6 @@ MonoBehaviour:
   isOnByDefault: 0
   intensityWiggle: 5
   intensityWiggleRange: 8
---- !u!136 &2082183545
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2082183542}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!23 &2082183546
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39256,6 +40788,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &2087662582
 GameObject:
   m_ObjectHideFlags: 0
@@ -39435,7 +40968,7 @@ GameObject:
   - component: {fileID: 2094359476}
   m_Layer: 0
   m_Name: Inner Wire
-  m_TagString: Dial
+  m_TagString: StereoCable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39449,8 +40982,8 @@ Transform:
   m_GameObject: {fileID: 2094359474}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 12.55, z: 0}
-  m_LocalScale: {x: 0.54, y: 13.722757, z: 0.54}
+  m_LocalPosition: {x: 0, y: 1.59, z: 0}
+  m_LocalScale: {x: 0.54, y: 26.15, z: 0.54}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1916173563}
@@ -39569,6 +41102,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!65 &2099233298
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39706,6 +41240,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!136 &2107447297
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -40296,6 +41831,7 @@ MonoBehaviour:
   useToggleLED: 0
   ToggleLEDOnAtStart: 0
   connectedToggleLED: {fileID: 0}
+  pluggedInto: {fileID: 0}
 --- !u!1 &2519455801992767298 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8062889470258195594, guid: dd5de0f40c4079c419d4f36e632b6610, type: 3}
@@ -40422,3 +41958,26 @@ SceneRoots:
   - {fileID: 344262729}
   - {fileID: 554094882}
   - {fileID: 3666886512584296988}
+  - {fileID: 305739871}
+  - {fileID: 171162140}
+  - {fileID: 1683440112}
+  - {fileID: 1489572368}
+  - {fileID: 698525617}
+  - {fileID: 1495721348}
+  - {fileID: 733143556}
+  - {fileID: 202355378}
+  - {fileID: 454913323}
+  - {fileID: 1631741059}
+  - {fileID: 189111273}
+  - {fileID: 1426608546}
+  - {fileID: 1529098289}
+  - {fileID: 1177918226}
+  - {fileID: 776870828}
+  - {fileID: 933703854}
+  - {fileID: 250769353}
+  - {fileID: 1843441270}
+  - {fileID: 1885152688}
+  - {fileID: 2058910346}
+  - {fileID: 563629357}
+  - {fileID: 1158350197}
+  - {fileID: 613801823}

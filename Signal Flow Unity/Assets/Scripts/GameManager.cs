@@ -24,13 +24,15 @@ public class GameManager : MonoBehaviour
     public bool isQuizMode = false;
     public TextMeshProUGUI incorrectItemsText;
     public bool guiUp = true;
-
+    private GameObject selectedCable;
+    [SerializeField] private GenericControl outputCableL;
+    [SerializeField] private GenericControl outputCableR;
     void Start()
     {
         
         mouseSelection = GameObject.Find("Main Camera").GetComponent<MouseSelectionController>();
         uIDText.text = "UID: " + Random.Range(0, 9999999999999999999);
-        if (SceneManager.GetActiveScene().name == "SignalFlowLevel1Quiz")
+        if (SceneManager.GetActiveScene().name == "SignalFlowLevel2Quiz")
         {
             isQuizMode = true;
             guiUp = false;
@@ -43,7 +45,7 @@ public class GameManager : MonoBehaviour
 
 
         //Tells User what Game Object is selected.
-        if ((mouseSelection.clickedObject.CompareTag("Dial") || mouseSelection.clickedObject.CompareTag("Slider") || mouseSelection.clickedObject.CompareTag("Toggle")) && mouseSelection.newClick&& !gameOver)
+        if ((mouseSelection.clickedObject.CompareTag("Dial") || mouseSelection.clickedObject.CompareTag("Slider") || mouseSelection.clickedObject.CompareTag("Toggle") || mouseSelection.clickedObject.CompareTag("StereoCable")) && mouseSelection.newClick&& !gameOver)
         {
             mouseSelection.newClick = false;
             selectText.text = "Currently Selected: " + mouseSelection.clickedObject.name;
@@ -60,6 +62,8 @@ public class GameManager : MonoBehaviour
             }
             
         }
+
+
 
         if ( followSlider)
         {
@@ -141,8 +145,19 @@ public class GameManager : MonoBehaviour
         }
 
     }
+    public void SelectCable(GameObject cable)
+    {
+        selectedCable = cable;
+    }
 
-
+    public void MoveCable(Vector3 interfaceLocation, GameObject interfacePlug)
+    {
+        selectionParticle.SetActive(false);
+        selectedCable.transform.position = new Vector3(interfaceLocation.x, selectedCable.transform.position.y, interfaceLocation.z);
+        selectionParticle.transform.localPosition = new Vector3(mouseSelection.clickedObject.transform.position.x, 0.4f, mouseSelection.clickedObject.transform.position.z);
+        selectionParticle.SetActive(true);
+        selectedCable.GetComponent<GenericControl>().pluggedInto = interfacePlug;
+    }
 
     IEnumerator GameOver()
     {
@@ -183,10 +198,10 @@ public class GameManager : MonoBehaviour
 
     public void QuizModeLevel()
     {
-        SceneManager.LoadScene("SignalFlowLevel1Quiz");
+        SceneManager.LoadScene("SignalFlowLevel2Quiz");
     }
     public void RestartGame()
     {
-        SceneManager.LoadScene("SignalFlowLevel1Practice");
+        SceneManager.LoadScene("SignalFlowLevel2Practice");
     }//If the restart button is pressed, restart the game.
 }

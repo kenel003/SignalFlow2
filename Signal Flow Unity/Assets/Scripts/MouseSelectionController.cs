@@ -7,6 +7,8 @@ public class MouseSelectionController : MonoBehaviour
 {
     public GameObject clickedObject;
     public bool newClick = false, newClickForToggle = false;
+    [SerializeField] public bool cableSelected = false;
+   
     [SerializeField] private GameManager gameManager;
 
    
@@ -23,9 +25,21 @@ public class MouseSelectionController : MonoBehaviour
                 if(raycastHit.transform != null && !raycastHit.transform.CompareTag("Untagged"))
                 {
                     clickedObject = raycastHit.transform.gameObject;
+                    if (clickedObject.CompareTag("StereoCable") && !cableSelected)
+                    {
+                        cableSelected = true;
+                        gameManager.SelectCable(clickedObject);
+                    }
+                    else if (clickedObject.CompareTag("StereoPlug") && cableSelected)
+                    {
+                        cableSelected = false;
+                        gameManager.MoveCable(clickedObject.transform.position, clickedObject);
+
+                    }
+
                     newClick = true;
                     newClickForToggle = true;
-                    Debug.Log("Click happened once");
+                    
                 }
             }
        } 

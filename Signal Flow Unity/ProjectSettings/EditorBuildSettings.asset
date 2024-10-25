@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SignalFlowLevel1Practice.unity
+    path: Assets/Scenes/SignalFlowLevel2Practice.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/SignalFlowLevel1Quiz.unity
+    path: Assets/Scenes/SignalFlowLevel2Quiz.unity
     guid: 42624e69b0a10844b800e0d853719a84
   m_configObjects: {}
