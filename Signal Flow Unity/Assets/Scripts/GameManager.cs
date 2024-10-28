@@ -16,17 +16,19 @@ public class GameManager : MonoBehaviour
     public LedControl[] ledNodes;
     public GenericControl[] channel1, channel2, channel3, channel4, channel5_6, channel7_8, channel9_10, channel11_12, channelFX, channelSub1_2, channelMain, incorrectControls;
     // Variables for Text
-    public GameObject selected, titleScreen, instructionScreen, finishText;
+    public GameObject selected, titleScreen, instructionScreen, finishText, part2Instructions;
     public TextMeshProUGUI selectText, titleText;
     public Button start1Button, restartButton, start2Button;
     public TextMeshProUGUI descriptionText, gameDoneText, uIDText;
-    private bool followSlider = false, gameOver = false;
+    private bool followSlider = false, gameOver = false, phaseTwo;
     public bool isQuizMode = false;
     public TextMeshProUGUI incorrectItemsText;
     public bool guiUp = true;
+    bool correctL, correctR;
     private GameObject selectedCable;
     [SerializeField] private GenericControl outputCableL;
     [SerializeField] private GenericControl outputCableR;
+    [SerializeField] private GameObject[] correctOutputs;
     void Start()
     {
         
@@ -82,18 +84,49 @@ public class GameManager : MonoBehaviour
                             {
                                 ledNodes[2].Toggle(true); //Fader light on
 
-                                if(channel1[12].toggled) //LR Bus enabled
+                                if(channel1[11].toggled) //SUB 1/2 Bus enabled
                                 {
-                                    ledNodes[3].Toggle(true); //LR Bus light on
+                                    ledNodes[3].Toggle(true); //SUB 1/2 Bus enabled
 
-                                    if(channelMain[3].controlValue > 0f && !channelMain[2].toggled) //MAIN fader is above 0 and not muted
+                                    if(channelSub1_2[3].controlValue > 0f && !channelSub1_2[2].toggled) //SUB fader is above 0 and neither toggle for LR or phones is toggled
                                     {
                         
                                         ledNodes[4].Toggle(true);
-                                        ledNodes[5].Toggle(true);
-                                        ledNodes[6].Toggle(true);
-                                        gameOver = true;
-                                        StartCoroutine(GameOver());
+
+                                        if (!phaseTwo)
+                                        {
+                                            if (outputCableL.pluggedInto == correctOutputs[0] || outputCableL.pluggedInto == correctOutputs[1])
+                                            {
+                                                ledNodes[5].Toggle(true);
+                                                correctL = true;
+                                            }
+                                            if ((outputCableR.pluggedInto == correctOutputs[0] || outputCableR.pluggedInto == correctOutputs[1]))
+                                            {
+                                                ledNodes[6].Toggle(true);
+                                                correctR = true;
+                                            }
+                                            else
+                                            {
+                                                ledNodes[6].Toggle(false);
+                                                correctR = false;
+                                            }
+                                            if (correctL && correctR)
+                                            {
+                                                
+                                                StartPartTwo();
+                                            }
+                                        }
+                                        
+                                    }
+                                    else if (phaseTwo && channelSub1_2[3].controlValue > 0f && channelSub1_2[2].toggled) //phase 2 win conditions begin, L-R is toggled
+                                    {
+                                        if(channelMain[3].controlValue > 0 && !channelMain[2].toggled)
+                                        {
+                                            ledNodes[5].Toggle(true);
+                                            ledNodes[6].Toggle(true);
+                                            gameOver = true;
+                                            StartCoroutine(GameOver());
+                                        }
                                     }
                                     else //main slider is 0 or muted
                                     {
@@ -159,6 +192,22 @@ public class GameManager : MonoBehaviour
         selectedCable.GetComponent<GenericControl>().pluggedInto = interfacePlug;
     }
 
+    void StartPartTwo()
+    {
+        guiUp = true;
+        phaseTwo = true;
+        part2Instructions.SetActive(true);
+        ledNodes[5].Toggle(false);
+        ledNodes[6].Toggle(false);
+        outputCableL.transform.localPosition = new Vector3(correctOutputs[2].transform.position.x, 0.4f, correctOutputs[2].transform.position.z);
+        outputCableR.transform.localPosition = new Vector3(correctOutputs[3].transform.position.x, 0.4f, correctOutputs[3].transform.position.z);
+    }
+
+    public void ClosePart2Instructions()
+    {
+        part2Instructions.SetActive(false);
+        guiUp = false;
+    }
     IEnumerator GameOver()
     {
         guiUp = true;
