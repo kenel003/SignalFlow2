@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
     private bool followSlider = false, gameOver = false;
     public bool phaseTwo;
     public bool isQuizMode = false;
-    public TextMeshProUGUI incorrectItemsText;
+    public TextMeshProUGUI incorrectItemsText, phaseOneIncorrectItemsText;
     public bool guiUp = true, channel1InputComplete, channel2InputComplete, channel1Sending, channel2Sending;
     public bool correctL, correctR;
     private GameObject selectedCable;
@@ -189,8 +189,8 @@ public class GameManager : MonoBehaviour
                                         }
                                         else 
                                         {
-                                            //ledNodes[7].Toggle(false);
-                                            //ledNodes[8].Toggle(false);
+                                            ledNodes[7].Toggle(false);
+                                            ledNodes[8].Toggle(false);
                                         }
 
                                         
@@ -519,11 +519,23 @@ public class GameManager : MonoBehaviour
     
     IEnumerator StartPartTwo()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         guiUp = true;
         phaseTwo = true;
         part2Instructions.SetActive(true);
-        
+        int wrongControlsUsed = 0;
+        foreach (GenericControl control in phaseOneIncorrectControls)
+        {
+            if (control.controlValue != 0 && !control.ToggleLEDOnAtStart)
+            {
+                wrongControlsUsed++;
+            }
+            else if (control.ToggleLEDOnAtStart && control.controlValue == 0)
+            {
+                wrongControlsUsed++;
+            }
+        }
+        phaseOneIncorrectItemsText.text = " You used " + wrongControlsUsed + " incorrect controls.";
         outputCableL.transform.localPosition = new Vector3(correctOutputs[2].transform.position.x, 0.4f, correctOutputs[2].transform.position.z);
         outputCableR.transform.localPosition = new Vector3(correctOutputs[3].transform.position.x, 0.4f, correctOutputs[3].transform.position.z);
     }
