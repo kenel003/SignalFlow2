@@ -130,12 +130,12 @@ public class GenericControl : MonoBehaviour
                 {
                     toggled = true; //turns toggle on
                     controlValue = 1;
-                    Debug.Log("Toggled ON at original Position: " + transform.localPosition.y);
+                    
                     transform.localPosition = new Vector3(transform.localPosition.x, toggleDownHeight, transform.localPosition.z);
                 }
                 else if (transform.localPosition.y <= toggleDownHeight) //toggle is currently on
                 {
-                    Debug.Log("Toggled OFF at position: " + transform.localPosition.y);
+                    
                     toggled = false; //turns toggle off
                     controlValue = 0;
                     transform.localPosition = new Vector3(transform.localPosition.x, toggleUpHeight, transform.localPosition.z);

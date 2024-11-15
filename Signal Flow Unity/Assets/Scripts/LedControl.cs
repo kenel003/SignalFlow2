@@ -49,6 +49,7 @@ public class LedControl : MonoBehaviour
             }
             if (currentlyMixed)
             {
+                SetIntensity(Mathf.Abs(Mathf.Sin(Mathf.Sin(intensityWiggle * Time.time)) * intensityWiggleRange) + 1);
                 rend.material.SetTextureOffset("_MainTex", new Vector2(0, Time.timeSinceLevelLoad));
             }
             else
@@ -100,7 +101,7 @@ public class LedControl : MonoBehaviour
             finalColor = Color.white * Mathf.LinearToGammaSpace(intensity);
             mat.SetTexture("_MainTex", mixedColorTexture);
             mat.SetTexture("_EmissionMap", mixedColorTexture);
-            mat.SetColor("_EmissionColor", Color.white);
+            mat.SetColor("_EmissionColor", finalColor);
         }
         else
         {

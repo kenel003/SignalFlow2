@@ -23,6 +23,7 @@ public class OutputCableLEDControl : MonoBehaviour
     private float intensity;
     private Renderer rend;
     private GameManager gameManager;
+    public bool isCorrect;
 
     private void Start()
     {
@@ -39,34 +40,35 @@ public class OutputCableLEDControl : MonoBehaviour
         {
             correctOutputs = false;
         }
-
-        if (!gameManager.phaseTwo && correctOutputs)
+        //NEED BASIC isCorrect flag
+        if (!gameManager.phaseTwo )
         {
             if (inputTrainingLED[0].GetToggled()) //Channel 1 training LED is on
             {
-                if (inputTrainingLED[1].GetToggled()) //BOTH channels are sending, line should be mixed
+                if (inputTrainingLED[1].GetToggled() && isCorrect) //BOTH channels are sending, line should be mixed
                 {
                     rend.material = mixedMaterial;
                     rend.material.SetTextureOffset("_MainTex", new Vector2(0, Time.timeSinceLevelLoad * -1));
                     SetIntensity(Mathf.Abs(Mathf.Sin(Mathf.Sin(intensityWiggle * Time.time)) * intensityWiggleRange) + 1);
                     UpdateColor(rend.material.color);
-                    Debug.Log("MIXED");
+                    
                 }
-                else
+                else if(isCorrect)
                 {
                     rend.material = channel1OnMaterial;
-                    Debug.Log("CHANNEL 1");
+                    
                 }
             }
-            else if (inputTrainingLED[1].GetToggled()) //Channel 2 is on without Channel 1
+            else if (inputTrainingLED[1].GetToggled() && isCorrect) //Channel 2 is on without Channel 1
             {
                 rend.material = channel2OnMaterial;
 
-                Debug.Log("CHANNEL 2");
+                
             }
-            else // no channels, should be non-illuminated
+
+            if(!isCorrect) // no channels, should be non-illuminated
             {
-                Debug.Log("NOTHING");
+                
                 rend.material = offMaterial;
             }
         }
@@ -74,8 +76,20 @@ public class OutputCableLEDControl : MonoBehaviour
         {
             if(inputTrainingLEDPhaseTwo[0].GetToggled() && inputTrainingLEDPhaseTwo[1].GetToggled())
             {
-                rend.material = mixedMaterial;
+                if(inputTrainingLEDPhaseTwo[0].currentlyMixed && inputTrainingLEDPhaseTwo[0].currentlyMixed)
+                {
+                    rend.material = mixedMaterial;
+                    rend.material.SetTextureOffset("_MainTex", new Vector2(0, Time.timeSinceLevelLoad * -1));
+                    SetIntensity(Mathf.Abs(Mathf.Sin(Mathf.Sin(intensityWiggle * Time.time)) * intensityWiggleRange) + 1);
+                }
+                else if (!inputTrainingLEDPhaseTwo[0].currentlyMixed || !inputTrainingLEDPhaseTwo[0].currentlyMixed)
+                {
+                    rend.material = channel3OnMaterial;
+                    rend.material.SetTextureOffset("_MainTex", new Vector2(0, Time.timeSinceLevelLoad * -1));
+                    SetIntensity(Mathf.Abs(Mathf.Sin(Mathf.Sin(intensityWiggle * Time.time)) * intensityWiggleRange) + 1);
+                }
             }
+            
             else
             {
                 rend.material = offMaterial;
@@ -99,5 +113,9 @@ public class OutputCableLEDControl : MonoBehaviour
             mat.SetColor("_EmissionColor", Color.white);
     }
 
+    public void setCorrect(bool correctOrNot)
+    {
+        isCorrect = correctOrNot;
+    }
 }
 

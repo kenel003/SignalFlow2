@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     public GameObject selectionParticle;
     //Dial Scripts
     public LedControl[] ledNodes;
-    public GenericControl[] channel1, channel2, channel3, channel4, channel5_6, channel7_8, channel9_10, channel11_12, channelFX, channelSub1_2, channelMain, incorrectControls;
+    public GenericControl[] channel1, channel2, channel3, channel4, channel5_6, channel7_8, channel9_10, channel11_12, channelFX, channelSub1_2, channelMain, incorrectControls, phaseOneIncorrectControls;
     // Variables for Text
     public GameObject selected, titleScreen, instructionScreen, finishText, part2Instructions;
     public TextMeshProUGUI selectText, titleText;
@@ -93,7 +93,7 @@ public class GameManager : MonoBehaviour
                                 {
                                     ledNodes[3].Toggle(true); //SUB 1/2 Bus LED enabled
                                     channel1Sending = true;
-                                    if(channelSub1_2[3].controlValue > 0f && !channelSub1_2[2].toggled) //SUB fader is above 0 and neither toggle for LR or phones is toggled
+                                    if(channelSub1_2[3].controlValue > 0f) //SUB fader is above 0 
                                     {
                         
                                         ledNodes[4].Toggle(true);
@@ -125,55 +125,111 @@ public class GameManager : MonoBehaviour
                                                 channel1InputComplete = false;
                                             }
                                         }
+                                        else if (channelSub1_2[2].toggled)// send is toggled
+                                        {
+                                            Debug.Log("SUB TO MAIN TOGGLED");
+                                            if (channel1Sending && channel2Sending)
+                                            {
+                                                Debug.Log("Main bottom on, mixed");
+                                                ledNodes[7].currentlyMixed = true;
+                                                ledNodes[7].Toggle(true);
+                                            }
+                                            else if (!channel1Sending && channel2Sending)
+                                            {
+                                                Debug.Log("Main bottom on, single");
+                                                ledNodes[7].currentlyMixed = false;
+                                                ledNodes[7].Toggle(true);
+                                            }
+                                            else if (channel1Sending && !channel2Sending)
+                                            {
+                                                Debug.Log("Main bottom on, single");
+                                                ledNodes[7].currentlyMixed = false;
+                                                ledNodes[7].Toggle(true);
+                                            }
+                                            else
+                                            {
+                                                Debug.Log("Main bottom OFF");
+                                                ledNodes[7].Toggle(false);
+                                            }
+                                            if (channelMain[3].controlValue > 0)
+                                            {
+                                                if (channel1Sending && channel2Sending)
+                                                {
+                                                    Debug.Log("Main TOP on, mixed");
+                                                    ledNodes[8].currentlyMixed = true;
+                                                    ledNodes[8].Toggle(true);
+                                                }
+                                                else if (!channel1Sending && channel2Sending)
+                                                {
+                                                    Debug.Log("Main TOP on, single");
+                                                    ledNodes[8].currentlyMixed = false;
+                                                    
+                                                    ledNodes[8].Toggle(true);
+                                                }
+                                                else if (channel1Sending && !channel2Sending)
+                                                {
+                                                    Debug.Log("Main TOP on, single");
+                                                    ledNodes[8].currentlyMixed = false;
+                                                    ledNodes[8].Toggle(true);
+                                                }
+                                                else
+                                                {
+                                                    Debug.Log("Main TOP OFF");
+                                                    ledNodes[8].Toggle(false);
+                                                }
+                                            }
+                                            else ledNodes[8].Toggle(false);
+
+                                            if (phaseTwo && channelMain[3].controlValue > 0 && !channelMain[2].toggled && correctR && correctL && channel1Sending && channel2Sending)
+                                            {
+
+                                                gameOver = true;
+                                                StartCoroutine(GameOver());
+                                            }
+                                        }
+                                        else 
+                                        {
+                                            //ledNodes[7].Toggle(false);
+                                            //ledNodes[8].Toggle(false);
+                                        }
+
                                         
                                     }
 
 
-                                    else if (phaseTwo && channelSub1_2[3].controlValue > 0f) //phase 2 win conditions begin, L-R is toggled
+                                    else //SUB slider is 0 or muted
                                     {
-                                        if (channelSub1_2[2].toggled)
-                                        {
-                                            ledNodes[7].Toggle(true);
-                                        }
-                                        else ledNodes[7].Toggle(false);
-                                        if (channelMain[3].controlValue > 0)
-                                        {
-                                            ledNodes[8].Toggle(true);
-                                        }
-                                         else ledNodes[8].Toggle(false);
-
-                                        if (channelMain[3].controlValue > 0 && !channelMain[2].toggled)
-                                        {
-                                            //ledNodes[5].Toggle(true);
-                                            //ledNodes[6].Toggle(true); 
-                                            gameOver = true;
-                                            StartCoroutine(GameOver());
-                                        }
-                                    }
-                                    else //main slider is 0 or muted
-                                    {
-                                        channel1Sending = false;
+                                        //channel1Sending = false;
                                         ledNodes[4].Toggle(false);
-                                       // ledNodes[5].Toggle(false);
-                                       // ledNodes[6].Toggle(false);
-                                    }
+                                        //ledNodes[7].Toggle(false);
+                                        //ledNodes[8].Toggle(false);
+                                        channel1InputComplete = false;
+                                        // ledNodes[5].Toggle(false);
+                                        // ledNodes[6].Toggle(false);
+                        }
 
                                 } //LR Bus enabled
                                 else //LR Bus disabled, turns off all lights after
                                 {
                                     channel1Sending = false;
+                                    //ledNodes[7].Toggle(false);
+                                    //ledNodes[8].Toggle(false);
                                     ledNodes[3].Toggle(false);
                                     ledNodes[4].Toggle(false);
-                                   // ledNodes[5].Toggle(false);
-                                    //ledNodes[6].Toggle(false);
-                                }//LR Bus disabled, turns off all lights after
+                                    channel1InputComplete = false;
+                        // ledNodes[5].Toggle(false);
+                        //ledNodes[6].Toggle(false);
+                    }//LR Bus disabled, turns off all lights after
                             }
                 else //FADER is 0
                 {
                     channel1Sending = false;
+                    //ledNodes[7].Toggle(false);
+                    //ledNodes[8].Toggle(false);
                     ledNodes[2].Toggle(false);//fader light and all after is off
                     ledNodes[3].Toggle(false);
                     ledNodes[4].Toggle(false);
+                    channel1InputComplete = false;
                     //ledNodes[5].Toggle(false);
                     //ledNodes[6].Toggle(false);
                 } 
@@ -187,6 +243,9 @@ public class GameManager : MonoBehaviour
                 ledNodes[2].Toggle(false);
                 ledNodes[3].Toggle(false);
                 ledNodes[4].Toggle(false);
+                //ledNodes[7].Toggle(false);
+                //ledNodes[8].Toggle(false);
+                channel1InputComplete = false;
                 //ledNodes[5].Toggle(false);
                 //ledNodes[6].Toggle(false);
             }//MUTE is ON, turn off all lights except GAIN and EQ light (index 0)
@@ -199,6 +258,9 @@ public class GameManager : MonoBehaviour
             ledNodes[2].Toggle(false);
             ledNodes[3].Toggle(false);
             ledNodes[4].Toggle(false);
+            //ledNodes[7].Toggle(false);
+            //ledNodes[8].Toggle(false);
+            channel1InputComplete = false;
             //ledNodes[5].Toggle(false);
             //ledNodes[6].Toggle(false);
         }
@@ -221,37 +283,36 @@ public class GameManager : MonoBehaviour
                         ledNodes[12].Toggle(true); //SUB 1/2 Bus LED enabled
                         channel2Sending = true;
 
-                        if (channelSub1_2[3].controlValue > 0f && !channelSub1_2[2].toggled) //SUB fader is above 0 and neither toggle for LR or phones is toggled
+                        if (channelSub1_2[3].controlValue > 0f) //SUB fader is above 0 and neither toggle for LR or phones is toggled
                         {
 
                             ledNodes[13].Toggle(true);
 
                             if (!phaseTwo) //if still phase one, light up the output cables if correct 
                             {
-                                if (outputCableL.pluggedInto == correctOutputs[0] || outputCableL.pluggedInto == correctOutputs[1])
+                                if (correctL)
                                 {
-                                    //ledNodes[5].Toggle(true); 
-                                    correctL = true;
+                                    outputCableL.toggled = true;
                                 }
                                 else
                                 {
-                                    //ledNodes[5].Toggle(false);
-                                    correctL = false;
+                                    outputCableL.toggled = false;
+                                    channel2InputComplete = false;
                                 }
-                                if ((outputCableR.pluggedInto == correctOutputs[0] || outputCableR.pluggedInto == correctOutputs[1]))
+
+                                if (correctR)
                                 {
-                                    //ledNodes[6].Toggle(true);
-                                    correctR = true;
+                                    outputCableR.toggled = true;
                                 }
                                 else
                                 {
-                                    //ledNodes[6].Toggle(false);
-                                    correctR = false;
+                                    outputCableR.toggled = false;
+                                    channel2InputComplete = false;
                                 }
+                                //Check if both are done and win condition for part one is done
                                 if (correctL && correctR)
                                 {
                                     channel2InputComplete = true;
-                                    
                                 }
                                 else
                                 {
@@ -259,16 +320,73 @@ public class GameManager : MonoBehaviour
                                 }
                             }
 
+                            //////
+                            else if (channelSub1_2[2].toggled)// send is toggled
+                            {
+                                Debug.Log("SUB TO MAIN TOGGLED");
+                                if (channel1Sending && channel2Sending)
+                                {
+                                    Debug.Log("Main bottom on, mixed");
+                                    ledNodes[7].currentlyMixed = true;
+                                    ledNodes[7].Toggle(true);
+                                }
+                                else if (!channel1Sending && channel2Sending)
+                                {
+                                    Debug.Log("Main bottom on, single");
+                                    ledNodes[7].currentlyMixed = false;
+                                    ledNodes[7].Toggle(true);
+                                }
+                                else if (channel1Sending && !channel2Sending)
+                                {
+                                    Debug.Log("Main bottom on, single");
+                                    ledNodes[7].currentlyMixed = false;
+                                    ledNodes[7].Toggle(true);
+                                }
+                                else
+                                {
+                                    Debug.Log("Main bottom OFF");
+                                    ledNodes[7].Toggle(false);
+                                }
+                                if (channelMain[3].controlValue > 0)
+                                {
+                                    if (channel1Sending && channel2Sending)
+                                    {
+                                        Debug.Log("Main TOP on, mixed");
+                                        ledNodes[8].currentlyMixed = true;
+                                        ledNodes[8].Toggle(true);
+                                    }
+                                    else if (!channel1Sending && channel2Sending)
+                                    {
+                                        Debug.Log("Main TOP on, single");
+                                        ledNodes[8].currentlyMixed = false;
+
+                                        ledNodes[8].Toggle(true);
+                                    }
+                                    else if (channel1Sending && !channel2Sending)
+                                    {
+                                        Debug.Log("Main TOP on, single");
+                                        ledNodes[8].currentlyMixed = false;
+                                        ledNodes[8].Toggle(true);
+                                    }
+                                    else
+                                    {
+                                        Debug.Log("Main TOP OFF");
+                                        ledNodes[8].Toggle(false);
+                                    }
+                                }
+                                else ledNodes[8].Toggle(false);
+                                /////
+                            }
                         }
 
 
-                        
                         else //main slider is 0 or muted
                         {
-                            channel2Sending = false;
-                            //ledNodes[4].Toggle(false);
+                            //channel2Sending = false;
+                            channel2InputComplete = false;
                             ledNodes[13].Toggle(false);
-                            //ledNodes[6].Toggle(false);
+                            ledNodes[7].Toggle(false);
+                            ledNodes[8].Toggle(false);
                         }
 
                     } //SUB1_2 Bus enabled
@@ -276,21 +394,23 @@ public class GameManager : MonoBehaviour
                     {
                         channel2Sending = false;
                         MixChannelsToggle(false);
+                        channel2InputComplete = false;
                         ledNodes[13].Toggle(false);
                         ledNodes[12].Toggle(false);
-                        //ledNodes[5].Toggle(false);
-                        //ledNodes[6].Toggle(false);
+                        ledNodes[7].Toggle(false);
+                        ledNodes[8].Toggle(false);
                     }//LR Bus disabled, turns off all lights after
                 }
                 else //FADER is 0
                 {
                     channel2Sending = false;
                     MixChannelsToggle(false);
+                    channel2InputComplete = false;
                     ledNodes[11].Toggle(false);//fader light and all after is off
                     ledNodes[13].Toggle(false);
                     ledNodes[12].Toggle(false);
-                    //ledNodes[5].Toggle(false);
-                    //ledNodes[6].Toggle(false);
+                    //ledNodes[7].Toggle(false);
+                    //ledNodes[8].Toggle(false);
                 }
             }//MUTE is off, turns on light next to fader
 
@@ -301,27 +421,49 @@ public class GameManager : MonoBehaviour
                 MixChannelsToggle(false);
                 ledNodes[10].Toggle(false);
                 ledNodes[11].Toggle(false);
+                channel2InputComplete = false;
                 ledNodes[13].Toggle(false);
-                //ledNodes[4].Toggle(false);
-                //ledNodes[5].Toggle(false);
-                //ledNodes[6].Toggle(false);
+                //ledNodes[7].Toggle(false);
+                //ledNodes[8].Toggle(false);
             }//MUTE is ON, turn off all lights except GAIN and EQ light (index 0)
         }
         else //turns off all lights when GAIN is not above 0
         {
             channel2Sending = false;
+            channel2InputComplete = false;
             MixChannelsToggle(false);
             ledNodes[9].Toggle(false);
             ledNodes[10].Toggle(false);
             ledNodes[11].Toggle(false);
             ledNodes[12].Toggle(false);
-            //ledNodes[4].Toggle(false);
-            //ledNodes[5].Toggle(false);
-            //ledNodes[6].Toggle(false);
+            //ledNodes[7].Toggle(false);
+            //ledNodes[8].Toggle(false);
         }
 
+        //OUTPUT CABLE CORRECT OR NOT
+        if (!phaseTwo) //if still phase one, light up the output cables if correct 
+        {
+            if (outputCableL.pluggedInto == correctOutputs[0] || outputCableL.pluggedInto == correctOutputs[1])
+            {
+                outputCableL.GetComponentInChildren<OutputCableLEDControl>().setCorrect(true);
+            }
+            else
+            {
+                outputCableL.GetComponentInChildren<OutputCableLEDControl>().setCorrect(false);
+            }
+            if ((outputCableR.pluggedInto == correctOutputs[0] || outputCableR.pluggedInto == correctOutputs[1]))
+            {
+                outputCableR.GetComponentInChildren<OutputCableLEDControl>().setCorrect(true);
+            }
+            else
+            {
+                outputCableR.GetComponentInChildren<OutputCableLEDControl>().setCorrect(false);
+            }
+
+
+            
+        }
         //MIXED SIGNAL SENDING
-        
         if (channel1Sending && channel2Sending)
         {
             MixChannelsToggle(true);
@@ -381,8 +523,7 @@ public class GameManager : MonoBehaviour
         guiUp = true;
         phaseTwo = true;
         part2Instructions.SetActive(true);
-        //ledNodes[5].Toggle(false);
-        //ledNodes[6].Toggle(false);
+        
         outputCableL.transform.localPosition = new Vector3(correctOutputs[2].transform.position.x, 0.4f, correctOutputs[2].transform.position.z);
         outputCableR.transform.localPosition = new Vector3(correctOutputs[3].transform.position.x, 0.4f, correctOutputs[3].transform.position.z);
     }
