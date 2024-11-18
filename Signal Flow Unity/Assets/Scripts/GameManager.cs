@@ -535,7 +535,7 @@ public class GameManager : MonoBehaviour
                 wrongControlsUsed++;
             }
         }
-        phaseOneIncorrectItemsText.text = " You used " + wrongControlsUsed + " incorrect controls.";
+        phaseOneIncorrectItemsText.text = "" + wrongControlsUsed;
         outputCableL.transform.localPosition = new Vector3(correctOutputs[2].transform.position.x, 0.4f, correctOutputs[2].transform.position.z);
         outputCableR.transform.localPosition = new Vector3(correctOutputs[3].transform.position.x, 0.4f, correctOutputs[3].transform.position.z);
     }
@@ -544,6 +544,10 @@ public class GameManager : MonoBehaviour
     {
         part2Instructions.SetActive(false);
         guiUp = false;
+        //selected = null;
+        //selectedCable = null;
+        selectText.text = "";
+        selectionParticle.transform.position = new Vector3(1000, selectionParticle.transform.position.y, selectionParticle.transform.position.z);
     }
     IEnumerator GameOver()
     {
