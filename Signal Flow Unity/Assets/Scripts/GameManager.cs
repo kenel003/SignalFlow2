@@ -564,7 +564,7 @@ public class GameManager : MonoBehaviour
                 wrongControlsUsed++;
             }
         }
-        incorrectItemsText.text = " You used " + wrongControlsUsed + " incorrect controls.";
+        incorrectItemsText.text = "" + wrongControlsUsed ;
         yield return new WaitForSeconds(2);
         guiUp = true;
         finishText.gameObject.SetActive(true);
