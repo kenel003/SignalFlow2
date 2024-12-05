@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GenericControl outputCableR;
     [SerializeField] private GameObject[] correctOutputs;
     public Texture mixedColorTexture;
-    
+    public Toggle iHaveRead1, iHaveRead2;
     void Start()
     {
         
@@ -542,12 +542,21 @@ public class GameManager : MonoBehaviour
 
     public void ClosePart2Instructions()
     {
-        part2Instructions.SetActive(false);
-        guiUp = false;
-        //selected = null;
-        //selectedCable = null;
-        selectText.text = "";
-        selectionParticle.transform.position = new Vector3(1000, selectionParticle.transform.position.y, selectionParticle.transform.position.z);
+        
+            part2Instructions.SetActive(false);
+        if (isQuizMode)
+        {
+            descriptionText.text = "Route your Submix to the L-R Main Mix.";
+        }
+        else
+        {
+            descriptionText.text = "Level 2b: Assign Your Sub Mix to the Main Mix \r\n \r\n Now that you have learned how to assign signal to the Sub 1 & 2 outputs, let’s use a “Sub mix” for one of it’s most common applications: creating a sub mix that fits within our main mix. \r\n\r\n This is often used when making a mix of a group of instruments, like a drum set.You can mix the drum set down to just one fader(Main SUB 1 - 2 fader) and feed that one fader to the Main Mix.You can then use the one sub mix fader to control the volume of all the assigned channels rather than turn up and down all the faders from those channels. \r\n\r\n Notice the Main SUB 1 - 2 Fader has a bus assign that feeds the LR Mix.When using a sub mix in your main mix.Make sure the channels you want in your sub mix are ONLY feeding the Main SUB 1 - 2 fader and not the L - R Bus.";
+        }
+            guiUp = false;
+            selectText.text = "";
+            selectionParticle.transform.position = new Vector3(1000, selectionParticle.transform.position.y, selectionParticle.transform.position.z);
+        
+        
     }
     IEnumerator GameOver()
     {
@@ -574,16 +583,18 @@ public class GameManager : MonoBehaviour
 
     public void Start1()
     {
-        guiUp = true;
+        guiUp = false;
         titleScreen.gameObject.SetActive(false);
-        instructionScreen.gameObject.SetActive(true);
+      
     }//Goes through starts screen and instruction screen. On Button press.
 
     public void Start2()
     {
-        instructionScreen.gameObject.SetActive(false);
-        guiUp = false;
-        selected.gameObject.SetActive(true);
+        
+            guiUp = false;
+           // selected.gameObject.SetActive(true);
+       
+
     }//Ends instruction screen. Starts selected object text. On Button press.
 
     public void QuizModeLevel()
