@@ -488,11 +488,15 @@ public class GameManager : MonoBehaviour
 
     public void MoveCable(Vector3 interfaceLocation, GameObject interfacePlug)
     {
-        selectionParticle.SetActive(false);
-        selectedCable.transform.position = new Vector3(interfaceLocation.x, selectedCable.transform.position.y, interfaceLocation.z);
-        selectionParticle.transform.localPosition = new Vector3(mouseSelection.clickedObject.transform.position.x, 0.4f, mouseSelection.clickedObject.transform.position.z);
-        selectionParticle.SetActive(true);
-        selectedCable.GetComponent<GenericControl>().pluggedInto = interfacePlug;
+        if (!phaseTwo)
+        {
+            selectionParticle.SetActive(false);
+            selectedCable.transform.position = new Vector3(interfaceLocation.x, selectedCable.transform.position.y, interfaceLocation.z);
+            selectionParticle.transform.localPosition = new Vector3(mouseSelection.clickedObject.transform.position.x, 0.4f, mouseSelection.clickedObject.transform.position.z);
+            selectionParticle.SetActive(true);
+            selectedCable.GetComponent<GenericControl>().pluggedInto = interfacePlug;
+        }
+        
     }
 
     void MixChannelsToggle(bool mix)
