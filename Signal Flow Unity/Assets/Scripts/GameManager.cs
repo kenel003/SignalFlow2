@@ -557,7 +557,7 @@ public class GameManager : MonoBehaviour
             descriptionText.text = "Level 2b: Assign Your Sub Mix to the Main Mix \r\n \r\n Now that you have learned how to assign signal to the Sub 1 & 2 outputs, let’s use a “Sub mix” for one of it’s most common applications: creating a sub mix that fits within our main mix. \r\n\r\n This is often used when making a mix of a group of instruments, like a drum set.You can mix the drum set down to just one fader(Main SUB 1-2 fader) and feed that one fader to the Main Mix.You can then use the one sub mix fader to control the volume of all the assigned channels rather than turn up and down all the faders from those channels. \r\n\r\n Notice the Main SUB 1-2 Fader has a bus assign that feeds the L-R Mix.When using a sub mix in your main mix. Make sure the channels you want in your sub mix are ONLY feeding the Main SUB 1-2 fader and not the L-R Bus.";
         }
             guiUp = false;
-            selectText.text = "";
+            selectText.text = "Currently Selected: NONE";
             selectionParticle.transform.position = new Vector3(1000, selectionParticle.transform.position.y, selectionParticle.transform.position.z);
         
         
